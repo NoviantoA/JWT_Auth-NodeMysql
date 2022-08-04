@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNLiBOb3ZpYW50byBBbmdnb3JvIiwiZW1haWwiOiJub3ZpYW50b0BnbWFpbC5jb20iLCJpYXQiOjE2NTk2MTYwMzAsImV4cCI6MTY1OTYxNjA0NX0.Eq7VdhUOEGVWJ3MQTrEXO08NxoZrGlA0DR4aYjI_224
+###
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "M. Novianto Anggoro",
+    "email": "novianto@gmail.com",
+    "password": "123456",
+    "confirmPassword": "123456"
+}
+
+###
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "novianto@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
